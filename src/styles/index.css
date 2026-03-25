@@ -60,8 +60,9 @@ body {
   letter-spacing: 1px;
 }
 
-/* Subtle CRT Scanline effect */
-body::before {
+/* Subtle CRT Scanline effect - only on retro theme */
+html[data-theme="retro"] body::before,
+html body::before {
   content: "";
   position: fixed;
   top: 0;
@@ -77,6 +78,10 @@ body::before {
     transparent 2px
   );
   z-index: 999;
+}
+
+html[data-theme="light"] body::before {
+  display: none;
 }
 
 a {
