@@ -2,10 +2,12 @@
   "name": "my-resume-terminal",
   "version": "1.0.0",
   "description": "Interactive web-based terminal interface for displaying a resume",
+  "homepage": "https://renaudgallego.github.io/my-resume-terminal/",
   "scripts": {
     "dev": "parcel index.html",
     "build": "parcel build index.html",
-    "clean": "rm -rf dist .parcel-cache resume-terminal.*.js resume-terminal.*.css"
+    "clean": "rm -rf dist .parcel-cache resume-terminal.*.js resume-terminal.*.css",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "keywords": [
     "resume",
@@ -23,6 +25,7 @@
     "@parcel/transformer-typescript-tsc": "^2.16.4",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
+    "gh-pages": "^6.3.0",
     "parcel": "^2.10.0",
     "typescript": "^5.3.0"
   },
