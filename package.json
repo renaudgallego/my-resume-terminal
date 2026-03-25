@@ -5,9 +5,8 @@
   "homepage": "https://renaudgallego.github.io/my-resume-terminal/",
   "scripts": {
     "dev": "parcel index.html",
-    "build": "parcel build index.html --public-url /my-resume-terminal/ --dist-dir docs",
-    "clean": "rm -rf docs dist .parcel-cache resume-terminal.*.js resume-terminal.*.css",
-    "deploy": "npm run build && git add docs && git commit -m 'Deploy to GitHub Pages' && git push"
+    "build": "parcel build index.html --dist-dir dist --public-url ./",
+    "clean": "rm -rf dist .parcel-cache"
   },
   "keywords": [
     "resume",

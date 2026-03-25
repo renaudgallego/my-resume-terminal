@@ -207,11 +207,11 @@
       });
     }
   }
-})({"4Mor0":[function(require,module,exports,__globalThis) {
+})({"HNFCn":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
-var HMR_SERVER_PORT = 1234;
+var HMR_SERVER_PORT = 64715;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "439701173a9199ea";
 var HMR_USE_SSE = false;
@@ -28286,6 +28286,6 @@ const projects = [
     }
 ];
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}]},["4Mor0","aqzUV"], "aqzUV", "parcelRequire030d", {}, null, null, "http://localhost:1234")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}]},["HNFCn","aqzUV"], "aqzUV", "parcelRequire030d", {}, null, null, "http://localhost:64715")
 
 //# sourceMappingURL=my-resume-terminal.442a7092.js.map
