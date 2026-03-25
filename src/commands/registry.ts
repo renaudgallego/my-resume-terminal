@@ -34,6 +34,14 @@ export const commands: CommandMetadata[] = [
     name: "linkedin",
     description: "opens my LinkedIn profile"
   },
+  {
+    name: "retro",
+    description: "switches to retro theme"
+  },
+  {
+    name: "light",
+    description: "switches to light theme"
+  },
   // {
   //   name: "getresume",
   //   description: "downloads my resume"

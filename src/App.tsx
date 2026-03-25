@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Terminal } from "./components/Terminal";
 
-type Theme = "retro" | "dark" | "light";
+type Theme = "retro" | "light";
 
 export const App: React.FC = () => {
   const [theme, setTheme] = useState<Theme>("retro");

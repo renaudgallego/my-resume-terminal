@@ -10,18 +10,6 @@
   --hint-color: #080;
 }
 
-html[data-theme="dark"] {
-  --bg: #1a1a1a;
-  --fg: #0d0;
-  --accent: #0f0;
-  --prompt-color: #0f0;
-  --table-border: #0b0;
-  --table-bg: #0f2a0f;
-  --error-color: #f55;
-  --success-color: #0f0;
-  --hint-color: #0a0;
-}
-
 html[data-theme="light"] {
   --bg: #f0f0f0;
   --fg: #060;

@@ -23,17 +23,6 @@ html[data-theme="retro"] {
   --hint-color: #008800;
 }
 
-html[data-theme="dark"] {
-  --bg: #1a1a1a;
-  --fg: #00dd00;
-  --accent: #00ff00;
-  --prompt-color: #00ff00;
-  --table-border: #00bb00;
-  --table-bg: #0f2a0f;
-  --error-color: #ff5555;
-  --success-color: #00ff00;
-  --hint-color: #00aa00;
-}
 
 html[data-theme="light"] {
   --bg: #f0f0f0;

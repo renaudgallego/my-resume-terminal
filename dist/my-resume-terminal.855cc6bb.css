@@ -10,18 +10,6 @@ html[data-theme="retro"], html {
   --hint-color: #080;
 }
 
-html[data-theme="dark"] {
-  --bg: #1a1a1a;
-  --fg: #0d0;
-  --accent: #0f0;
-  --prompt-color: #0f0;
-  --table-border: #0b0;
-  --table-bg: #0f2a0f;
-  --error-color: #f55;
-  --success-color: #0f0;
-  --hint-color: #0a0;
-}
-
 html[data-theme="light"] {
   --bg: #f0f0f0;
   --fg: #060;
@@ -42,10 +30,6 @@ html[data-theme="retro"] body {
   text-shadow: 0 0 2px #0a03;
 }
 
-html[data-theme="dark"] body {
-  text-shadow: 0 0 4px #00dd004d;
-}
-
 html[data-theme="light"] body {
   text-shadow: none;
 }
@@ -54,12 +38,6 @@ html[data-theme="retro"] code {
   color: #0a0;
   text-shadow: 0 0 2px #0a03;
   background-color: #00aa0014;
-}
-
-html[data-theme="dark"] code {
-  color: #0d0;
-  text-shadow: 0 0 3px #00dd004d;
-  background-color: #00dd001f;
 }
 
 html[data-theme="light"] code {
@@ -78,18 +56,6 @@ html[data-theme="retro"] th {
 html[data-theme="retro"] td {
   text-shadow: 0 0 1px #00aa001a;
   border: 1px solid #080;
-}
-
-html[data-theme="dark"] th {
-  color: #0f0;
-  text-shadow: 0 0 3px #00dd004d;
-  background-color: #0f2a0f;
-  border: 1px solid #0b0;
-}
-
-html[data-theme="dark"] td {
-  text-shadow: 0 0 2px #0d03;
-  border: 1px solid #0b0;
 }
 
 html[data-theme="light"] th {
@@ -114,16 +80,6 @@ html[data-theme="retro"] a:hover {
   text-shadow: 0 0 3px #00aa004d;
 }
 
-html[data-theme="dark"] a {
-  color: #0d0;
-  text-shadow: 0 0 3px #00dd004d;
-}
-
-html[data-theme="dark"] a:hover {
-  color: #0f0;
-  text-shadow: 0 0 5px #00ff0080;
-}
-
 html[data-theme="light"] a {
   color: #080;
   text-shadow: none;
@@ -144,16 +100,6 @@ html[data-theme="retro"] .success {
   text-shadow: 0 0 2px #0a03;
 }
 
-html[data-theme="dark"] .error {
-  color: #f55;
-  text-shadow: 0 0 4px #f556;
-}
-
-html[data-theme="dark"] .success {
-  color: #0f0;
-  text-shadow: 0 0 4px #0f06;
-}
-
 html[data-theme="light"] .error {
   color: #c00;
   text-shadow: none;
@@ -167,12 +113,6 @@ html[data-theme="light"] .success {
 html[data-theme="retro"] .hint {
   color: #080;
   text-shadow: none;
-  font-style: italic;
-}
-
-html[data-theme="dark"] .hint {
-  color: #0a0;
-  text-shadow: 0 0 3px #00aa004d;
   font-style: italic;
 }
 

@@ -25088,6 +25088,44 @@ const Terminal = ({ onThemeChange })=>{
             historyHook.reset();
             return;
         }
+        if (command === "/retro") {
+            onThemeChange?.("retro");
+            const output = (0, _jsxRuntime.jsx)((0, _outputLine.OutputLine), {
+                className: "success",
+                children: "Theme changed to retro"
+            });
+            setEntries((prev)=>[
+                    ...prev,
+                    {
+                        command,
+                        output,
+                        timestamp: Date.now()
+                    }
+                ]);
+            setInputValue("");
+            historyHook.addToHistory(command);
+            historyHook.reset();
+            return;
+        }
+        if (command === "/light") {
+            onThemeChange?.("light");
+            const output = (0, _jsxRuntime.jsx)((0, _outputLine.OutputLine), {
+                className: "success",
+                children: "Theme changed to light"
+            });
+            setEntries((prev)=>[
+                    ...prev,
+                    {
+                        command,
+                        output,
+                        timestamp: Date.now()
+                    }
+                ]);
+            setInputValue("");
+            historyHook.addToHistory(command);
+            historyHook.reset();
+            return;
+        }
         // Execute command
         const output = (0, _handlers.executeCommand)(command);
         setEntries((prev)=>[
@@ -27703,6 +27741,14 @@ const commands = [
     {
         name: "linkedin",
         description: "opens my LinkedIn profile"
+    },
+    {
+        name: "retro",
+        description: "switches to retro theme"
+    },
+    {
+        name: "light",
+        description: "switches to light theme"
     },
     // {
     //   name: "getresume",
