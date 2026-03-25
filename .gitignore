@@ -11,3 +11,4 @@ build/
 *.*.css
 .env
 .env.local
+dist/
