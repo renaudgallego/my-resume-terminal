@@ -1,14 +1,11 @@
 node_modules
 .parcel-cache
-dist
+dist/
 *.log
 .DS_Store
 .idea
 *.swp
 *.swo
-build/
-*.*.js
-*.*.css
 .env
 .env.local
-dist/
+# docs/ is needed for GitHub Pages - DO NOT IGNORE
