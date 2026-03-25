@@ -56,35 +56,6 @@ export const Terminal: React.FC<TerminalProps> = ({ onThemeChange }) => {
       return;
     }
 
-    if (command === "/retro") {
-      onThemeChange?.("retro");
-      const output = <OutputLine className="success">Theme changed to retro</OutputLine>;
-      setEntries(prev => [...prev, { command, output, timestamp: Date.now() }]);
-      setInputValue("");
-      historyHook.addToHistory(command);
-      historyHook.reset();
-      return;
-    }
-
-    if (command === "/dark") {
-      onThemeChange?.("dark");
-      const output = <OutputLine className="success">Theme changed to dark</OutputLine>;
-      setEntries(prev => [...prev, { command, output, timestamp: Date.now() }]);
-      setInputValue("");
-      historyHook.addToHistory(command);
-      historyHook.reset();
-      return;
-    }
-
-    if (command === "/light") {
-      onThemeChange?.("light");
-      const output = <OutputLine className="success">Theme changed to light</OutputLine>;
-      setEntries(prev => [...prev, { command, output, timestamp: Date.now() }]);
-      setInputValue("");
-      historyHook.addToHistory(command);
-      historyHook.reset();
-      return;
-    }
 
     // Execute command
     const output = executeCommand(command);
@@ -124,11 +95,6 @@ export const Terminal: React.FC<TerminalProps> = ({ onThemeChange }) => {
   return (
     <div className="terminal">
       <div className="terminal-header">
-        <div className="header-dots">
-          <span className="dot red"></span>
-          <span className="dot yellow"></span>
-          <span className="dot green"></span>
-        </div>
         <div className="header-title">Terminal ~ Resume</div>
       </div>
 

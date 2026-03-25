@@ -21,34 +21,6 @@
   box-shadow: 0 1px 5px rgba(0, 170, 0, 0.1);
 }
 
-.header-dots {
-  display: flex;
-  gap: 8px;
-}
-
-.dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  display: inline-block;
-  box-shadow: 0 0 4px currentColor;
-}
-
-.dot.red {
-  background-color: #ff5f57;
-  box-shadow: 0 0 4px #ff5f57;
-}
-
-.dot.yellow {
-  background-color: #ffbd2e;
-  box-shadow: 0 0 4px #ffbd2e;
-}
-
-.dot.green {
-  background-color: #28c940;
-  box-shadow: 0 0 4px #28c940;
-}
-
 .header-title {
   font-weight: bold;
   flex: 1;

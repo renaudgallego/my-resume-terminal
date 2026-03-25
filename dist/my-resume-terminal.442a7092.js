@@ -207,11 +207,11 @@
       });
     }
   }
-})({"HNFCn":[function(require,module,exports,__globalThis) {
+})({"fDv81":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
-var HMR_SERVER_PORT = 64715;
+var HMR_SERVER_PORT = 64783;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "439701173a9199ea";
 var HMR_USE_SSE = false;
@@ -25088,63 +25088,6 @@ const Terminal = ({ onThemeChange })=>{
             historyHook.reset();
             return;
         }
-        if (command === "/retro") {
-            onThemeChange?.("retro");
-            const output = (0, _jsxRuntime.jsx)((0, _outputLine.OutputLine), {
-                className: "success",
-                children: "Theme changed to retro"
-            });
-            setEntries((prev)=>[
-                    ...prev,
-                    {
-                        command,
-                        output,
-                        timestamp: Date.now()
-                    }
-                ]);
-            setInputValue("");
-            historyHook.addToHistory(command);
-            historyHook.reset();
-            return;
-        }
-        if (command === "/dark") {
-            onThemeChange?.("dark");
-            const output = (0, _jsxRuntime.jsx)((0, _outputLine.OutputLine), {
-                className: "success",
-                children: "Theme changed to dark"
-            });
-            setEntries((prev)=>[
-                    ...prev,
-                    {
-                        command,
-                        output,
-                        timestamp: Date.now()
-                    }
-                ]);
-            setInputValue("");
-            historyHook.addToHistory(command);
-            historyHook.reset();
-            return;
-        }
-        if (command === "/light") {
-            onThemeChange?.("light");
-            const output = (0, _jsxRuntime.jsx)((0, _outputLine.OutputLine), {
-                className: "success",
-                children: "Theme changed to light"
-            });
-            setEntries((prev)=>[
-                    ...prev,
-                    {
-                        command,
-                        output,
-                        timestamp: Date.now()
-                    }
-                ]);
-            setInputValue("");
-            historyHook.addToHistory(command);
-            historyHook.reset();
-            return;
-        }
         // Execute command
         const output = (0, _handlers.executeCommand)(command);
         setEntries((prev)=>[
@@ -25180,28 +25123,12 @@ const Terminal = ({ onThemeChange })=>{
     return (0, _jsxRuntime.jsxs)("div", {
         className: "terminal",
         children: [
-            (0, _jsxRuntime.jsxs)("div", {
+            (0, _jsxRuntime.jsx)("div", {
                 className: "terminal-header",
-                children: [
-                    (0, _jsxRuntime.jsxs)("div", {
-                        className: "header-dots",
-                        children: [
-                            (0, _jsxRuntime.jsx)("span", {
-                                className: "dot red"
-                            }),
-                            (0, _jsxRuntime.jsx)("span", {
-                                className: "dot yellow"
-                            }),
-                            (0, _jsxRuntime.jsx)("span", {
-                                className: "dot green"
-                            })
-                        ]
-                    }),
-                    (0, _jsxRuntime.jsx)("div", {
-                        className: "header-title",
-                        children: "Terminal ~ Resume"
-                    })
-                ]
+                children: (0, _jsxRuntime.jsx)("div", {
+                    className: "header-title",
+                    children: "Terminal ~ Resume"
+                })
             }),
             (0, _jsxRuntime.jsxs)("div", {
                 className: "terminal-body",
@@ -27782,18 +27709,6 @@ const commands = [
     //   description: "downloads my resume"
     // },
     {
-        name: "retro",
-        description: "sets retro green theme"
-    },
-    {
-        name: "dark",
-        description: "sets dark theme"
-    },
-    {
-        name: "light",
-        description: "sets light theme"
-    },
-    {
         name: "clear",
         description: "clears terminal"
     }
@@ -28286,6 +28201,6 @@ const projects = [
     }
 ];
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}]},["HNFCn","aqzUV"], "aqzUV", "parcelRequire030d", {}, null, null, "http://localhost:64715")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}]},["fDv81","aqzUV"], "aqzUV", "parcelRequire030d", {}, null, null, "http://localhost:64783")
 
 //# sourceMappingURL=my-resume-terminal.442a7092.js.map

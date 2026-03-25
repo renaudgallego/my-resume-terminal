@@ -39,18 +39,6 @@ export const commands: CommandMetadata[] = [
   //   description: "downloads my resume"
   // },
   {
-    name: "retro",
-    description: "sets retro green theme"
-  },
-  {
-    name: "dark",
-    description: "sets dark theme"
-  },
-  {
-    name: "light",
-    description: "sets light theme"
-  },
-  {
     name: "clear",
     description: "clears terminal"
   }
