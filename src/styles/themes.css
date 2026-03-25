@@ -1,17 +1,17 @@
 /* Three-theme system: retro, dark, light */
 
-/* Retro green theme - softened classic terminal look */
+/* Retro green theme - bright phosphor green with strong glow */
 html[data-theme="retro"],
 html {
-  --bg: #0a0a0a;
-  --fg: #00aa00;
-  --accent: #00cc00;
-  --prompt-color: #00cc00;
-  --table-border: #00aa00;
-  --table-bg: #0d1a0d;
-  --error-color: #dd5500;
-  --success-color: #00aa00;
-  --hint-color: #008800;
+  --bg: #000000;
+  --fg: #00ff00;
+  --accent: #00ff00;
+  --prompt-color: #00ff00;
+  --table-border: #00cc00;
+  --table-bg: #0a1a0a;
+  --error-color: #ff5500;
+  --success-color: #00ff00;
+  --hint-color: #00bb00;
 }
 
 /* Light theme - light background with green text */
@@ -37,9 +37,9 @@ body,
   transition: text-shadow 0.3s ease, color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
 }
 
-/* Retro-specific: minimal glow */
+/* Retro-specific: strong phosphor glow */
 html[data-theme="retro"] body {
-  text-shadow: 0 0 2px rgba(0, 170, 0, 0.2);
+  text-shadow: 0 0 8px rgba(0, 255, 0, 0.8), 0 0 16px rgba(0, 255, 0, 0.4);
 }
 
 
@@ -50,9 +50,9 @@ html[data-theme="light"] body {
 
 /* Code blocks styling per theme */
 html[data-theme="retro"] code {
-  background-color: rgba(0, 170, 0, 0.08);
-  color: #00aa00;
-  text-shadow: 0 0 2px rgba(0, 170, 0, 0.2);
+  background-color: rgba(0, 255, 0, 0.12);
+  color: #00ff00;
+  text-shadow: 0 0 6px rgba(0, 255, 0, 0.6);
 }
 
 
@@ -64,15 +64,15 @@ html[data-theme="light"] code {
 
 /* Table styling per theme */
 html[data-theme="retro"] th {
-  background-color: #0d1a0d;
-  color: #00cc00;
-  text-shadow: 0 0 2px rgba(0, 170, 0, 0.2);
-  border: 1px solid #008800;
+  background-color: #0a1a0a;
+  color: #00ff00;
+  text-shadow: 0 0 6px rgba(0, 255, 0, 0.6);
+  border: 1px solid #00cc00;
 }
 
 html[data-theme="retro"] td {
-  border: 1px solid #008800;
-  text-shadow: 0 0 1px rgba(0, 170, 0, 0.1);
+  border: 1px solid #00cc00;
+  text-shadow: 0 0 4px rgba(0, 255, 0, 0.4);
 }
 
 
@@ -90,13 +90,13 @@ html[data-theme="light"] td {
 
 /* Link styling per theme */
 html[data-theme="retro"] a {
-  color: #00aa00;
-  text-shadow: 0 0 2px rgba(0, 170, 0, 0.2);
+  color: #00ff00;
+  text-shadow: 0 0 8px rgba(0, 255, 0, 0.8);
 }
 
 html[data-theme="retro"] a:hover {
-  color: #00cc00;
-  text-shadow: 0 0 3px rgba(0, 170, 0, 0.3);
+  color: #33ff33;
+  text-shadow: 0 0 12px rgba(0, 255, 0, 1);
 }
 
 
@@ -112,13 +112,13 @@ html[data-theme="light"] a:hover {
 
 /* Error and success colors per theme */
 html[data-theme="retro"] .error {
-  color: #dd5500;
-  text-shadow: 0 0 2px rgba(221, 85, 0, 0.2);
+  color: #ff5500;
+  text-shadow: 0 0 8px rgba(255, 85, 0, 0.8);
 }
 
 html[data-theme="retro"] .success {
-  color: #00aa00;
-  text-shadow: 0 0 2px rgba(0, 170, 0, 0.2);
+  color: #00ff00;
+  text-shadow: 0 0 8px rgba(0, 255, 0, 0.8);
 }
 
 
@@ -134,8 +134,8 @@ html[data-theme="light"] .success {
 
 /* Hint styling per theme */
 html[data-theme="retro"] .hint {
-  color: #008800;
-  text-shadow: none;
+  color: #00bb00;
+  text-shadow: 0 0 4px rgba(0, 187, 0, 0.6);
   font-style: italic;
 }
 

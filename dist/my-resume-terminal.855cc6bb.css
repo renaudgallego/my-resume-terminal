@@ -1,13 +1,13 @@
 html[data-theme="retro"], html {
-  --bg: #0a0a0a;
-  --fg: #0a0;
-  --accent: #0c0;
-  --prompt-color: #0c0;
-  --table-border: #0a0;
-  --table-bg: #0d1a0d;
-  --error-color: #d50;
-  --success-color: #0a0;
-  --hint-color: #080;
+  --bg: #000;
+  --fg: #0f0;
+  --accent: #0f0;
+  --prompt-color: #0f0;
+  --table-border: #0c0;
+  --table-bg: #0a1a0a;
+  --error-color: #f50;
+  --success-color: #0f0;
+  --hint-color: #0b0;
 }
 
 html[data-theme="light"] {
@@ -27,7 +27,7 @@ body, .terminal, .terminal-header, .terminal-body, .terminal-input, .command-inp
 }
 
 html[data-theme="retro"] body {
-  text-shadow: 0 0 2px #0a03;
+  text-shadow: 0 0 8px #0f0c, 0 0 16px #0f06;
 }
 
 html[data-theme="light"] body {
@@ -35,9 +35,9 @@ html[data-theme="light"] body {
 }
 
 html[data-theme="retro"] code {
-  color: #0a0;
-  text-shadow: 0 0 2px #0a03;
-  background-color: #00aa0014;
+  color: #0f0;
+  text-shadow: 0 0 6px #0f09;
+  background-color: #00ff001f;
 }
 
 html[data-theme="light"] code {
@@ -47,15 +47,15 @@ html[data-theme="light"] code {
 }
 
 html[data-theme="retro"] th {
-  color: #0c0;
-  text-shadow: 0 0 2px #0a03;
-  background-color: #0d1a0d;
-  border: 1px solid #080;
+  color: #0f0;
+  text-shadow: 0 0 6px #0f09;
+  background-color: #0a1a0a;
+  border: 1px solid #0c0;
 }
 
 html[data-theme="retro"] td {
-  text-shadow: 0 0 1px #00aa001a;
-  border: 1px solid #080;
+  text-shadow: 0 0 4px #0f06;
+  border: 1px solid #0c0;
 }
 
 html[data-theme="light"] th {
@@ -71,13 +71,13 @@ html[data-theme="light"] td {
 }
 
 html[data-theme="retro"] a {
-  color: #0a0;
-  text-shadow: 0 0 2px #0a03;
+  color: #0f0;
+  text-shadow: 0 0 8px #0f0c;
 }
 
 html[data-theme="retro"] a:hover {
-  color: #0c0;
-  text-shadow: 0 0 3px #00aa004d;
+  color: #3f3;
+  text-shadow: 0 0 12px #0f0;
 }
 
 html[data-theme="light"] a {
@@ -91,13 +91,13 @@ html[data-theme="light"] a:hover {
 }
 
 html[data-theme="retro"] .error {
-  color: #d50;
-  text-shadow: 0 0 2px #d503;
+  color: #f50;
+  text-shadow: 0 0 8px #f50c;
 }
 
 html[data-theme="retro"] .success {
-  color: #0a0;
-  text-shadow: 0 0 2px #0a03;
+  color: #0f0;
+  text-shadow: 0 0 8px #0f0c;
 }
 
 html[data-theme="light"] .error {
@@ -111,8 +111,8 @@ html[data-theme="light"] .success {
 }
 
 html[data-theme="retro"] .hint {
-  color: #080;
-  text-shadow: none;
+  color: #0b0;
+  text-shadow: 0 0 4px #0b09;
   font-style: italic;
 }
 
