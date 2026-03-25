@@ -17,7 +17,7 @@ An interactive web-based terminal interface for displaying a resume. Built with 
   - `/hobbies` - Personal interests
   - `/projects` - GitHub projects
   - `/linkedin` - Open LinkedIn profile
-  - `/dark`, `/light`, `/retro` - Theme switching
+  - `/retro`, `/light` - Theme switching
   - `/clear` - Clear terminal history
   - `/help` - Show all commands
 
@@ -26,10 +26,9 @@ An interactive web-based terminal interface for displaying a resume. Built with 
   - **Arrow Up/Down** - Navigate command history
   - **Enter** - Execute command
 
-- **Three Themes**:
-  - Retro (default) - Softened green terminal
-  - Dark - Brighter green terminal
-  - Light - Light background with green text
+- **Two Themes**:
+  - Retro (default) - Authentic CRT terminal with phosphor green glow, scanlines, and vignette
+  - Light - Clean light background with green text
 
 - **Mobile Responsive** - Full-screen terminal on mobile devices
 
