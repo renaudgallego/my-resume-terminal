@@ -1,0 +1,203 @@
+/* Three-theme system: retro, dark, light */
+
+/* Retro green theme - softened classic terminal look */
+html[data-theme="retro"],
+html {
+  --bg: #0a0a0a;
+  --fg: #00aa00;
+  --accent: #00cc00;
+  --prompt-color: #00cc00;
+  --table-border: #00aa00;
+  --table-bg: #0d1a0d;
+  --error-color: #dd5500;
+  --success-color: #00aa00;
+  --hint-color: #008800;
+}
+
+/* Dark green theme - brighter, more modern */
+html[data-theme="dark"] {
+  --bg: #1a1a1a;
+  --fg: #00dd00;
+  --accent: #00ff00;
+  --prompt-color: #00ff00;
+  --table-border: #00bb00;
+  --table-bg: #0f2a0f;
+  --error-color: #ff5555;
+  --success-color: #00ff00;
+  --hint-color: #00aa00;
+}
+
+/* Light theme - light background with green text */
+html[data-theme="light"] {
+  --bg: #f0f0f0;
+  --fg: #006600;
+  --accent: #008800;
+  --prompt-color: #008800;
+  --table-border: #00aa00;
+  --table-bg: #e8f5e9;
+  --error-color: #cc0000;
+  --success-color: #008800;
+  --hint-color: #666666;
+}
+
+/* Smooth transitions for all theme changes */
+body,
+.terminal,
+.terminal-header,
+.terminal-body,
+.terminal-input,
+.command-input {
+  transition: text-shadow 0.3s ease, color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Retro-specific: minimal glow */
+html[data-theme="retro"] body {
+  text-shadow: 0 0 2px rgba(0, 170, 0, 0.2);
+}
+
+/* Dark-specific: moderate glow */
+html[data-theme="dark"] body {
+  text-shadow: 0 0 4px rgba(0, 221, 0, 0.3);
+}
+
+/* Light-specific: no glow */
+html[data-theme="light"] body {
+  text-shadow: none;
+}
+
+/* Code blocks styling per theme */
+html[data-theme="retro"] code {
+  background-color: rgba(0, 170, 0, 0.08);
+  color: #00aa00;
+  text-shadow: 0 0 2px rgba(0, 170, 0, 0.2);
+}
+
+html[data-theme="dark"] code {
+  background-color: rgba(0, 221, 0, 0.12);
+  color: #00dd00;
+  text-shadow: 0 0 3px rgba(0, 221, 0, 0.3);
+}
+
+html[data-theme="light"] code {
+  background-color: rgba(0, 136, 0, 0.1);
+  color: #006600;
+  text-shadow: none;
+}
+
+/* Table styling per theme */
+html[data-theme="retro"] th {
+  background-color: #0d1a0d;
+  color: #00cc00;
+  text-shadow: 0 0 2px rgba(0, 170, 0, 0.2);
+  border: 1px solid #008800;
+}
+
+html[data-theme="retro"] td {
+  border: 1px solid #008800;
+  text-shadow: 0 0 1px rgba(0, 170, 0, 0.1);
+}
+
+html[data-theme="dark"] th {
+  background-color: #0f2a0f;
+  color: #00ff00;
+  text-shadow: 0 0 3px rgba(0, 221, 0, 0.3);
+  border: 1px solid #00bb00;
+}
+
+html[data-theme="dark"] td {
+  border: 1px solid #00bb00;
+  text-shadow: 0 0 2px rgba(0, 221, 0, 0.2);
+}
+
+html[data-theme="light"] th {
+  background-color: #e8f5e9;
+  color: #008800;
+  text-shadow: none;
+  border: 1px solid #00aa00;
+}
+
+html[data-theme="light"] td {
+  border: 1px solid #00aa00;
+  text-shadow: none;
+}
+
+/* Link styling per theme */
+html[data-theme="retro"] a {
+  color: #00aa00;
+  text-shadow: 0 0 2px rgba(0, 170, 0, 0.2);
+}
+
+html[data-theme="retro"] a:hover {
+  color: #00cc00;
+  text-shadow: 0 0 3px rgba(0, 170, 0, 0.3);
+}
+
+html[data-theme="dark"] a {
+  color: #00dd00;
+  text-shadow: 0 0 3px rgba(0, 221, 0, 0.3);
+}
+
+html[data-theme="dark"] a:hover {
+  color: #00ff00;
+  text-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
+}
+
+html[data-theme="light"] a {
+  color: #008800;
+  text-shadow: none;
+}
+
+html[data-theme="light"] a:hover {
+  color: #006600;
+  text-shadow: none;
+}
+
+/* Error and success colors per theme */
+html[data-theme="retro"] .error {
+  color: #dd5500;
+  text-shadow: 0 0 2px rgba(221, 85, 0, 0.2);
+}
+
+html[data-theme="retro"] .success {
+  color: #00aa00;
+  text-shadow: 0 0 2px rgba(0, 170, 0, 0.2);
+}
+
+html[data-theme="dark"] .error {
+  color: #ff5555;
+  text-shadow: 0 0 4px rgba(255, 85, 85, 0.4);
+}
+
+html[data-theme="dark"] .success {
+  color: #00ff00;
+  text-shadow: 0 0 4px rgba(0, 255, 0, 0.4);
+}
+
+html[data-theme="light"] .error {
+  color: #cc0000;
+  text-shadow: none;
+}
+
+html[data-theme="light"] .success {
+  color: #008800;
+  text-shadow: none;
+}
+
+/* Hint styling per theme */
+html[data-theme="retro"] .hint {
+  color: #008800;
+  text-shadow: none;
+  font-style: italic;
+}
+
+html[data-theme="dark"] .hint {
+  color: #00aa00;
+  text-shadow: 0 0 3px rgba(0, 170, 0, 0.3);
+  font-style: italic;
+}
+
+html[data-theme="light"] .hint {
+  color: #666666;
+  text-shadow: none;
+  font-style: italic;
+}
