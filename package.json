@@ -5,8 +5,8 @@
   "homepage": "https://renaudgallego.github.io/my-resume-terminal/",
   "scripts": {
     "dev": "parcel index.html",
-    "build": "parcel build index.html --dist-dir dist --public-url ./",
-    "clean": "rm -rf dist .parcel-cache"
+    "build": "parcel build index.html --dist-dir docs --public-url ./",
+    "clean": "rm -rf docs dist .parcel-cache"
   },
   "keywords": [
     "resume",
