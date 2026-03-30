@@ -122,6 +122,9 @@ html[data-theme="retro"] .header-title {
   font-weight: bold;
   white-space: nowrap;
   text-shadow: 0 0 2px rgba(0, 170, 0, 0.3);
+}
+
+.current-input .prompt {
   animation: blink 1s infinite;
 }
 
