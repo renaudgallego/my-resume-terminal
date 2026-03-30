@@ -164,7 +164,7 @@ export const Terminal: React.FC<TerminalProps> = ({ onThemeChange }) => {
                 handleAutocomplete();
               }
             }}
-            placeholder="Type a command..."
+            placeholder="Type a command or /help"
             autoComplete="off"
             spellCheck="false"
           />
