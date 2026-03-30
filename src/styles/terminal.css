@@ -12,13 +12,24 @@
 }
 
 html[data-theme="retro"] .terminal {
-  border: 8px solid #1a3a1a;
-  border-right: 12px solid #1a3a1a;
-  border-bottom: 12px solid #0d1a0d;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 6px solid #2a3a2a;
   box-shadow:
-    0 0 30px rgba(0, 255, 0, 0.6),
-    inset 0 0 20px rgba(0, 0, 0, 0.8),
-    0 0 60px rgba(0, 255, 0, 0.2);
+    0 0 0 2px #1a2a1a,
+    0 0 40px rgba(0, 255, 0, 0.5),
+    0 0 80px rgba(0, 255, 0, 0.15),
+    inset 0 0 30px rgba(0, 0, 0, 0.6);
+}
+
+html[data-theme="light"] .terminal {
+  border-radius: 24px;
+  overflow: hidden;
+  border: 6px solid #aaaaaa;
+  box-shadow:
+    0 0 0 2px #999999,
+    0 0 20px rgba(0, 0, 0, 0.2),
+    inset 0 0 20px rgba(0, 0, 0, 0.05);
 }
 
 .terminal-header {
@@ -35,6 +46,12 @@ html[data-theme="retro"] .terminal-header {
   background: linear-gradient(180deg, #0d3d0d 0%, #050a05 100%);
   border-bottom: 2px solid #00cc00;
   box-shadow: 0 2px 10px rgba(0, 255, 0, 0.3), inset 0 1px 5px rgba(0, 255, 0, 0.1);
+}
+
+html[data-theme="light"] .terminal-header {
+  background: linear-gradient(180deg, #e0ede0 0%, #d4e8d4 100%);
+  border-bottom: 1px solid #00aa00;
+  box-shadow: 0 1px 5px rgba(0, 100, 0, 0.1);
 }
 
 .header-title {
@@ -203,6 +220,16 @@ html[data-theme="retro"] .header-title {
     border: none;
     border-radius: 0;
     box-shadow: 0 0 40px rgba(0, 255, 0, 0.6);
+  }
+
+  html[data-theme="retro"] .app,
+  html[data-theme="light"] .app {
+    padding: 0;
+  }
+
+  html[data-theme="retro"] .terminal,
+  html[data-theme="light"] .terminal {
+    border-radius: 0;
   }
 
   .terminal-header {

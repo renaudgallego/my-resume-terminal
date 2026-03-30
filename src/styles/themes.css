@@ -37,15 +37,27 @@ body,
   transition: text-shadow 0.3s ease, color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
 }
 
-/* Retro-specific: strong phosphor glow */
+/* Retro-specific: strong phosphor glow + CRT bezel */
 html[data-theme="retro"] body {
   text-shadow: 0 0 8px rgba(0, 255, 0, 0.8), 0 0 16px rgba(0, 255, 0, 0.4);
+  background: #0d0d0d;
+}
+
+html[data-theme="retro"] .app {
+  padding: 24px;
+  background: #0d0d0d;
 }
 
 
-/* Light-specific: no glow */
+/* Light-specific: no glow + CRT bezel */
 html[data-theme="light"] body {
   text-shadow: none;
+  background: #cccccc;
+}
+
+html[data-theme="light"] .app {
+  padding: 24px;
+  background: #cccccc;
 }
 
 /* Code blocks styling per theme */
