@@ -32,11 +32,13 @@ export interface Project {
   link?: string;
 }
 
+const CAREER_START_YEAR = 2005;
+
 // Profile information
 export const profile: Profile = {
   name: "Renaud Gallego",
   job: "Software Test Engineer",
-  experience: "19 years",
+  experience: `${new Date().getFullYear() - CAREER_START_YEAR} years`,
   city: "Nantes, France",
   nativeLanguage: "French",
   businessLanguage: "English"
