@@ -207,11 +207,11 @@
       });
     }
   }
-})({"fDv81":[function(require,module,exports,__globalThis) {
+})({"DxO3o":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
-var HMR_SERVER_PORT = 64783;
+var HMR_SERVER_PORT = 54796;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "439701173a9199ea";
 var HMR_USE_SSE = false;
@@ -28211,7 +28211,7 @@ const hobbies = [
     },
     {
         category: "AI & Automation",
-        items: "Playing around with Claude"
+        items: "Vibe coding around with Claude"
     },
     {
         category: "Languages of interest",
@@ -28247,6 +28247,6 @@ const projects = [
     }
 ];
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}]},["fDv81","aqzUV"], "aqzUV", "parcelRequire030d", {}, null, null, "http://localhost:64783")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}]},["DxO3o","aqzUV"], "aqzUV", "parcelRequire030d", {}, null, null, "http://localhost:54796")
 
 //# sourceMappingURL=my-resume-terminal.442a7092.js.map

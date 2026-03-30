@@ -1,10 +1,10 @@
 :root, html[data-theme="retro"] {
-  --bg: #0a0a0a;
+  --bg: #1a1a1a;
   --fg: #0a0;
   --accent: #0c0;
   --prompt-color: #0c0;
   --table-border: #0a0;
-  --table-bg: #0d1a0d;
+  --table-bg: #1a2a1a;
   --error-color: #d50;
   --success-color: #0a0;
   --hint-color: #080;
@@ -64,7 +64,7 @@ html[data-theme="retro"] body:after {
   content: "";
   pointer-events: none;
   z-index: 998;
-  background: radial-gradient(#0000 0%, #0009 100%);
+  background: radial-gradient(#0000 0%, #0000004d 100%);
   width: 100%;
   height: 100%;
   position: fixed;

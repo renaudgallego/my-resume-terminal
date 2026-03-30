@@ -139,7 +139,7 @@ export const hobbies: Hobby[] = [
   },
   {
     category: "AI & Automation",
-    items: "Playing around with Claude"
+    items: "Vibe coding around with Claude"
   },
   {
     category: "Languages of interest",

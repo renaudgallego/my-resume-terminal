@@ -1,10 +1,10 @@
 html[data-theme="retro"], html {
-  --bg: #000;
+  --bg: #1a1a1a;
   --fg: #0f0;
   --accent: #0f0;
   --prompt-color: #0f0;
   --table-border: #0c0;
-  --table-bg: #0a1a0a;
+  --table-bg: #1a2a1a;
   --error-color: #f50;
   --success-color: #0f0;
   --hint-color: #0b0;
