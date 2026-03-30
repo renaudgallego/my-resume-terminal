@@ -3,12 +3,12 @@
 /* Retro green theme - bright phosphor green with strong glow */
 html[data-theme="retro"],
 html {
-  --bg: #000000;
+  --bg: #1a1a1a;
   --fg: #00ff00;
   --accent: #00ff00;
   --prompt-color: #00ff00;
   --table-border: #00cc00;
-  --table-bg: #0a1a0a;
+  --table-bg: #1a2a1a;
   --error-color: #ff5500;
   --success-color: #00ff00;
   --hint-color: #00bb00;

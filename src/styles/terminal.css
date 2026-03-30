@@ -160,9 +160,8 @@ html[data-theme="retro"] .header-title {
 }
 
 .output-line.welcome {
-  color: var(--hint-color);
+  color: var(--fg);
   font-style: italic;
-  text-shadow: none;
 }
 
 .output-table {

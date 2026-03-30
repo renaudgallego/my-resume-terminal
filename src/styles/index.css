@@ -1,23 +1,23 @@
 :root {
   /* Default: Retro green terminal theme (softened) */
-  --bg: #0a0a0a;
+  --bg: #1a1a1a;
   --fg: #00aa00;
   --accent: #00cc00;
   --prompt-color: #00cc00;
   --table-border: #00aa00;
-  --table-bg: #0d1a0d;
+  --table-bg: #1a2a1a;
   --error-color: #dd5500;
   --success-color: #00aa00;
   --hint-color: #008800;
 }
 
 html[data-theme="retro"] {
-  --bg: #0a0a0a;
+  --bg: #1a1a1a;
   --fg: #00aa00;
   --accent: #00cc00;
   --prompt-color: #00cc00;
   --table-border: #00aa00;
-  --table-bg: #0d1a0d;
+  --table-bg: #1a2a1a;
   --error-color: #dd5500;
   --success-color: #00aa00;
   --hint-color: #008800;
@@ -93,7 +93,7 @@ html[data-theme="retro"] body::after {
   width: 100%;
   height: 100%;
   pointer-events: none;
-  background: radial-gradient(ellipse at center, transparent 0%, rgba(0, 0, 0, 0.6) 100%);
+  background: radial-gradient(ellipse at center, transparent 0%, rgba(0, 0, 0, 0.3) 100%);
   z-index: 998;
 }
 
