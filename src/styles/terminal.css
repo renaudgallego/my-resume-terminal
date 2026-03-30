@@ -80,6 +80,12 @@ html[data-theme="retro"] .header-title {
   width: 12px;
 }
 
+@media (max-width: 768px) {
+  .terminal-body::-webkit-scrollbar {
+    width: 8px;
+  }
+}
+
 .terminal-body::-webkit-scrollbar-track {
   background: var(--bg);
   border-left: 1px solid #008800;
@@ -225,14 +231,9 @@ html[data-theme="retro"] .header-title {
     box-shadow: 0 0 40px rgba(0, 255, 0, 0.6);
   }
 
-  html[data-theme="retro"] .app,
-  html[data-theme="light"] .app {
-    padding: 0;
-  }
-
   html[data-theme="retro"] .terminal,
   html[data-theme="light"] .terminal {
-    border-radius: 0;
+    border-radius: 16px;
   }
 
   .terminal-header {
@@ -261,16 +262,56 @@ html[data-theme="retro"] .header-title {
   }
 }
 
-/* Scrollable table wrapper on mobile */
 @media (max-width: 768px) {
-  .terminal-body {
-    overflow-x: auto;
+  li:has(.list-label) {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
   }
 
-  .output-table {
-    min-width: 100%;
+  .list-value {
+    padding-left: 8px;
+  }
+}
+
+/* Card layout for tables on mobile */
+@media (max-width: 768px) {
+  table thead {
+    display: none;
+  }
+
+  table tr {
     display: block;
-    overflow-x: auto;
+    margin-bottom: 12px;
+    border: 1px solid var(--table-border);
+    padding: 8px;
+  }
+
+  table tr:nth-child(even) {
+    background-color: var(--table-bg);
+  }
+
+  table td {
+    display: block;
+    border: none;
+    border-bottom: 1px solid rgba(0, 170, 0, 0.2);
+    padding: 4px 0;
+  }
+
+  table td:last-child {
+    border-bottom: none;
+  }
+
+  table td::before {
+    content: attr(data-label);
+    display: block;
+    font-weight: bold;
+    color: var(--accent);
+    font-size: 0.75em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 2px;
+    opacity: 0.8;
   }
 }
 

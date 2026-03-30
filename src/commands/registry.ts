@@ -7,40 +7,40 @@ export interface CommandMetadata {
 export const commands: CommandMetadata[] = [
   {
     name: "help",
-    description: "displays command list",
+    description: "command list",
     aliases: ["?"]
   },
   {
     name: "whoami",
-    description: "gets information about me"
+    description: "my profile"
   },
   {
     name: "experiences",
-    description: "lists my experiences (France and abroad)"
+    description: "work history"
   },
   {
     name: "education",
-    description: "displays education and trainings"
+    description: "education & training"
   },
   {
     name: "hobbies",
-    description: "lists my hobbies"
+    description: "interests & activities"
   },
   {
     name: "projects",
-    description: "lists my projects"
+    description: "GitHub projects"
   },
   {
     name: "linkedin",
-    description: "opens my LinkedIn profile"
+    description: "LinkedIn profile"
   },
   {
     name: "retro",
-    description: "switches to retro theme"
+    description: "retro theme"
   },
   {
     name: "light",
-    description: "switches to light theme"
+    description: "light theme"
   },
   // {
   //   name: "getresume",
@@ -48,7 +48,7 @@ export const commands: CommandMetadata[] = [
   // },
   {
     name: "clear",
-    description: "clears terminal"
+    description: "clear screen"
   }
 ];
 

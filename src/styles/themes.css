@@ -48,6 +48,11 @@ html[data-theme="retro"] .app {
   background: #0d0d0d;
 }
 
+@media (max-width: 768px) {
+  html[data-theme="retro"] .app {
+    padding: 0;
+  }
+}
 
 /* Light-specific: no glow + CRT bezel */
 html[data-theme="light"] body {
@@ -58,6 +63,12 @@ html[data-theme="light"] body {
 html[data-theme="light"] .app {
   padding: 24px;
   background: #cccccc;
+}
+
+@media (max-width: 768px) {
+  html[data-theme="light"] .app {
+    padding: 0;
+  }
 }
 
 /* Code blocks styling per theme */

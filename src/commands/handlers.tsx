@@ -49,7 +49,8 @@ function renderHelp(): CommandOutput {
       <ul>
         {commands.map(cmd => (
           <li key={cmd.name}>
-            <code>/{cmd.name}</code> : {cmd.description}
+            <span className="list-label"><code>/{cmd.name}</code> :</span>
+            <span className="list-value">{cmd.description}</span>
           </li>
         ))}
         <li className="hint">
@@ -94,10 +95,10 @@ function renderExperiences(): CommandOutput {
         <tbody>
           {experiencesFrance.map((exp, idx) => (
             <tr key={`france-${idx}`}>
-              <td>{exp.date}</td>
-              <td>{exp.client}</td>
-              <td>{exp.description}</td>
-              <td>{exp.tech}</td>
+              <td data-label="Date">{exp.date}</td>
+              <td data-label="Client">{exp.client}</td>
+              <td data-label="Description">{exp.description}</td>
+              <td data-label="Tech">{exp.tech}</td>
             </tr>
           ))}
         </tbody>
@@ -116,10 +117,10 @@ function renderExperiences(): CommandOutput {
         <tbody>
           {experiencesAbroad.map((exp, idx) => (
             <tr key={`abroad-${idx}`}>
-              <td>{exp.date}</td>
-              <td>{exp.client}</td>
-              <td>{exp.description}</td>
-              <td>{exp.tech}</td>
+              <td data-label="Date">{exp.date}</td>
+              <td data-label="Client">{exp.client}</td>
+              <td data-label="Description">{exp.description}</td>
+              <td data-label="Tech">{exp.tech}</td>
             </tr>
           ))}
         </tbody>
@@ -142,9 +143,9 @@ function renderEducation(): CommandOutput {
         <tbody>
           {education.map((edu, idx) => (
             <tr key={`edu-${idx}`}>
-              <td>{edu.date}</td>
-              <td>{edu.school}</td>
-              <td>{edu.description}</td>
+              <td data-label="Date">{edu.date}</td>
+              <td data-label="School">{edu.school}</td>
+              <td data-label="Description">{edu.description}</td>
             </tr>
           ))}
         </tbody>
@@ -159,7 +160,8 @@ function renderHobbies(): CommandOutput {
       <ul>
         {hobbies.map((hobby, idx) => (
           <li key={`hobby-${idx}`}>
-            <strong>{hobby.category}</strong> : {hobby.items}
+            <span className="list-label"><strong>{hobby.category}</strong> :</span>
+            <span className="list-value">{hobby.items}</span>
           </li>
         ))}
       </ul>
@@ -182,10 +184,10 @@ function renderProjects(): CommandOutput {
         <tbody>
           {projects.map((proj, idx) => (
             <tr key={`proj-${idx}`}>
-              <td>{proj.name}</td>
-              <td>{proj.description}</td>
-              <td>{proj.tech}</td>
-              <td>
+              <td data-label="Name">{proj.name}</td>
+              <td data-label="Description">{proj.description}</td>
+              <td data-label="Tech">{proj.tech}</td>
+              <td data-label="Link">
                 {proj.link ? (
                   <a href={proj.link} target="_blank" rel="noopener noreferrer">
                     Link
