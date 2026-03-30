@@ -49,7 +49,7 @@ export const experiencesFrance: Experience[] = [
   {
     date: "08/2024 - Now",
     client: "SII - Desoutter Validation",
-    description: "Validation testing of software and firmwares of tightenings tools used in industrial fields such as aeronautics and automative.",
+    description: "Validation testing of software and firmwares of tightening tools used in industrial fields such as aeronautics and automotive.",
     tech: "Jenkins, Spiratest, Redmine"
   },
   {
@@ -89,13 +89,13 @@ export const experiencesAbroad: Experience[] = [
   {
     date: "03/2011 - 09/2012",
     client: "CT GmbH Coordination - Germany",
-    description: "Coordination of the testing teams : English, French, Italian, German and Spanish. Our goal was to check the quality of localised assets of games. Translations were done by our in-house translation teams.",
+    description: "Coordination of the testing teams : English, French, Italian, German and Spanish. Our goal was to check the quality of localised assets of games. Translation was handled by our in-house teams.",
     tech: "Jira, Mantis, MemoQ, SDLTrados"
   },
   {
     date: "06/2005 - 02/2011",
-    client: "Nintendo Lead tester - Germany",
-    description: "Ensure the quality of localization/translation for franchises published by Nintendo of Europe. Bug reporting and management of French team.",
+    client: "Nintendo Lead Tester - Germany",
+    description: "Ensured the quality of localization/translation for franchises published by Nintendo of Europe. Responsible for bug reporting and management of the French testing team.",
     tech: "Jira, Mantis"
   }
 ];
@@ -105,7 +105,7 @@ export const education: Education[] = [
   {
     date: "2023",
     school: "Orsys - Nantes",
-    description: "Automatisation Robotframework / Selenium"
+    description: "Test Automation with Robot Framework / Selenium"
   },
   {
     date: "2021",
