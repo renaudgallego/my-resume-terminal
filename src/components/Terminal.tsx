@@ -134,7 +134,7 @@ export const Terminal: React.FC<TerminalProps> = ({ onThemeChange }) => {
           <div key={idx} className="history-entry">
             <div className="command-line">
               <span className="prompt">$ </span>
-              <span className="command-text">{entry.command}</span>
+              <code className="command-text">{entry.command}</code>
             </div>
             {entry.output && <div className="command-output">{entry.output}</div>}
           </div>
