@@ -32,7 +32,7 @@ export interface Project {
   link?: string;
 }
 
-const CAREER_START_YEAR = 2005;
+const CAREER_START_YEAR = 2005; // Nintendo Lead Tester, Germany
 
 // Profile information
 export const profile: Profile = {
